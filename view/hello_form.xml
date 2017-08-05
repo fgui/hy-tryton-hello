@@ -1,0 +1,6 @@
+<form string="Hello">
+     <label name="name"/>
+     <field name="name"/>
+     <label name="greeting"/>
+     <field name="greeting"/>
+</form>

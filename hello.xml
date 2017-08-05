@@ -1,0 +1,34 @@
+<tryton>
+  <data>
+    <record model="ir.ui.view" id="hello_view_tree">
+      <field name="model">hello</field>
+      <field name="type">tree</field>
+      <field name="name">hello_tree</field>
+    </record>
+    <record model="ir.ui.view" id="hello_view_form">
+      <field name="model">hello</field>
+      <field name="type">form</field>
+      <field name="name">hello_form</field>
+    </record>
+    <record model="ir.action.act_window" id="act_hello">
+      <field name="name">Hello World</field>
+      <field name="res_model">hello</field>
+    </record>
+
+    <record model="ir.action.act_window.view"
+	    id="act_hello_tree">
+      <field name="sequence" eval="10"/>
+      <field name="view" ref="hello_view_tree"/>
+      <field name="act_window" ref="act_hello"/>
+    </record>
+    <record model="ir.action.act_window.view"
+            id="act_hello_form">
+      <field name="sequence" eval="20"/>
+      <field name="view" ref="hello_view_form"/>
+      <field name="act_window" ref="act_hello"/>
+    </record>
+    
+    <menuitem id="menu_hello" sequence="1"
+	      icon="tryton-list" action="act_hello"/>
+  </data>
+</tryton>
