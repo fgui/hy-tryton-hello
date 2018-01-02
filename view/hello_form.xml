@@ -1,4 +1,4 @@
-<form string="Hello">
+<form>
      <label name="name"/>
      <field name="name"/>
      <label name="greeting"/>

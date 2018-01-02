@@ -1,4 +1,4 @@
-<tree string="Hello">
+<tree>
      <field name="name"/>
      <field name="greeting"/>
 </tree>
