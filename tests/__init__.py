@@ -1,6 +1,6 @@
 
 try:
-    from trytond.modules.country.tests.test_hello import suite
+    from trytond.modules.hello.tests.test_hello import suite
 except ImportError:
     from .test_hello import suite
 
