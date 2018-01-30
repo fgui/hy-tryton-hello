@@ -1,0 +1,51 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:hello,create_date:"
+msgid "Create Date"
+msgstr "Data creació"
+
+msgctxt "field:hello,create_uid:"
+msgid "Create User"
+msgstr "Usuari creació"
+
+msgctxt "field:hello,greeting:"
+msgid "Greeting"
+msgstr "Salutació"
+
+msgctxt "field:hello,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:hello,name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:hello,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:hello,write_date:"
+msgid "Write Date"
+msgstr "Usuari creació"
+
+msgctxt "field:hello,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "model:hello,name:"
+msgid "Hello World"
+msgstr "Hola mon"
+
+msgctxt "model:ir.action,name:act_hello"
+msgid "Hello World"
+msgstr "Hola mon"
+
+msgctxt "model:ir.ui.menu,name:menu_hello"
+msgid "Hello World"
+msgstr "Hola mon"
+
+msgctxt "view:hello:"
+msgid "Hello"
+msgstr "Hola"
