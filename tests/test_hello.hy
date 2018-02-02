@@ -1,6 +1,9 @@
 (import [unittest]
+        [doctest]
         [trytond.tests.test_tryton]
         [trytond.tests.test_tryton [ModuleTestCase with_transaction]]
+        [trytond.tests.test_tryton [doctest_setup doctest_teardown]]
+        [trytond.tests.test_tryton [doctest_checker]]
         [trytond.pool [Pool]])
 
 
@@ -25,4 +28,12 @@
   (.addTests suite
              (.loadTestsFromTestCase
                (.TestLoader unittest) HelloTestCase))
+  (.addTests suite
+             (.DocFileSuite doctest
+                            "scenario.rst"
+                            :setUp doctest_setup
+                            :tearDown doctest_teardown
+                            :checker doctest_checker
+                            :optionflags doctest.REPORT_ONLY_FIRST_FAILURE))
   suite)
+
