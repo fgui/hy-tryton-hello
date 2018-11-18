@@ -1,5 +1,4 @@
 (import [trytond.model [ModelSQL ModelView fields]])
-(def --all-- ["Hello"])
 
 (defclass Hello [ModelSQL ModelView]
   "Hello World"
